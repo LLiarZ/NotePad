@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="270dp"
+    android:layout_height="350dp"
+    android:background="#696969"
+    android:clickable="true"
+    >
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="3dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginRight="3dp"
+    android:layout_marginBottom="3dp"
+    android:background="#595959"
+    >
+
+    <LinearLayout
+        android:id="@+id/LL_dialogtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#494949"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape"
+            android:text="Cancel"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="#F5F5F5"
+            android:textSize="15dp"
+            android:clickable="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:gravity="center"
+            android:text="New Notebook"
+            android:textColor="#B9B9B9"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL_Untitled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#595959"
+        android:layout_below="@id/LL_dialogtitle"
+        >
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="30dp"
+            android:background="@null"
+            android:hint="Untitled notebook"
+            android:drawableBottom="@drawable/line"
+            android:textColorHint="#B9B9B9"
+
+            android:id="@+id/et_untitled"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LL_BC"
+        android:background="#292929"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@id/LL_Untitled"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/rg1"
+            >
+
+            <RadioButton
+                android:layout_width="80dp"
+                android:layout_height="42dp"
+                android:id="@+id/rb_basic"
+                android:button="@null"
+                android:text="BASIC"
+                android:checked="true"
+                android:textColor="#F5F5F5"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+
+                />
+
+            <RadioButton
+                android:id="@+id/rb_color_paper"
+                android:layout_width="130dp"
+                android:layout_height="42dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:checked="true"
+                android:textColor="#F5F5F5"
+                android:text="COLORED PAPER"
+                />
+        </RadioGroup>
+    </LinearLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewpager"
+        android:layout_weight="1"
+        android:layout_below="@id/LL_BC"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+
+        >
+    </androidx.viewpager.widget.ViewPager>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/view"
+        android:layout_below="@id/LL_Untitled"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        >
+    </View>
+</RelativeLayout>
+</RelativeLayout>

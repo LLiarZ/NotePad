@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tuyaActivity">
+    <FrameLayout
+        android:id="@+id/f1_boardcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+    <com.example.notepad.DragView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/dragview"
+        android:background="#00ffffff"
+        android:layout_below="@+id/rd_group"
+        >
+    </com.example.notepad.DragView>
+    <ImageView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#282828"
+        />
+    <RadioGroup
+        android:id="@+id/rd_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#333333"
+        android:layout_below="@id/tv_title"
+        android:orientation="horizontal"
+        >
+
+
+        <RadioButton
+            android:id="@+id/btn_undo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="撤回操作"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            />
+
+        <RadioButton
+            android:id="@+id/btn_recover"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="恢复操作"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/btn_paintstyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="画笔样式"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            />
+
+        <RadioButton
+        android:id="@+id/btn_write"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawablePadding="3dp"
+        android:gravity="center"
+        android:text="绘制文本"
+        android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            />
+
+        <RadioButton
+            android:id="@+id/btn_shapes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="绘制图形"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            />
+
+        <RadioButton
+            android:id="@+id/btn_cut"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="剪切粘贴"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            />
+
+        <RadioButton
+            android:id="@+id/btn_change"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="切换页面"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            />
+
+
+    </RadioGroup>
+
+    <SeekBar
+        android:id="@+id/sb_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="5"
+        android:max="100"
+        android:maxHeight="5dp"
+        android:minHeight="5dp"
+        android:visibility="gone"
+        android:progressDrawable="@drawable/seekbar_bg"
+        android:layout_below="@+id/rd_group"
+       />
+
+</RelativeLayout>

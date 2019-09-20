@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#898989"/>
+    <corners android:radius="6dip"/>
+    <padding android:bottom="3dp"
+             android:left="3dp"
+             android:right="3dp"
+             android:top="3dp"/>
+    <selector>
+        <item android:state_pressed="true">
+            <shape>
+                <solid android:color="@color/check_t"/>
+            </shape>
+        </item>
+
+    </selector>
+</shape>
+

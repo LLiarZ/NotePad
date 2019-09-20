@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+ <HorizontalScrollView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:background="#494949"
+     >
+ <LinearLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+     >
+  <LinearLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+     >
+  <Button
+      android:id="@+id/btn_white"
+      android:layout_marginTop="20dp"
+      android:layout_marginLeft="10dp"
+      android:layout_width="100dp"
+      android:layout_height="150dp"
+
+      android:background="@drawable/white"
+      />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="White Paper"
+      android:paddingLeft="30dp"
+      android:textSize="12dp"
+      android:layout_marginBottom="5dp"
+      android:textColor="#ffffff"
+      />
+ </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      >
+   <Button
+       android:id="@+id/btn_natural"
+       android:layout_marginTop="20dp"
+       android:layout_marginLeft="30dp"
+       android:layout_width="100dp"
+       android:layout_height="150dp"
+
+       android:background="@drawable/natural"
+       />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Natural Paper"
+       android:paddingLeft="43dp"
+       android:textSize="12dp"
+       android:layout_marginBottom="5dp"
+       android:textColor="#ffffff"
+       />
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      >
+   <Button
+       android:id="@+id/btn_legal"
+       android:layout_marginTop="20dp"
+       android:layout_marginLeft="30dp"
+       android:layout_width="100dp"
+       android:layout_height="150dp"
+
+       android:background="@drawable/legal"
+       />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Legal Paper"
+       android:paddingLeft="43dp"
+       android:textSize="12dp"
+       android:layout_marginBottom="5dp"
+       android:textColor="#ffffff"
+       />
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      >
+   <Button
+       android:id="@+id/btn_ruled"
+       android:layout_marginTop="20dp"
+       android:layout_marginLeft="30dp"
+       android:layout_width="100dp"
+       android:layout_height="150dp"
+
+       android:background="@drawable/ruled"
+       />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Ruled Paper"
+       android:paddingLeft="43dp"
+       android:textSize="12dp"
+       android:layout_marginBottom="5dp"
+       android:textColor="#ffffff"
+       />
+  </LinearLayout>
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      >
+   <Button
+       android:id="@+id/btn_sq1"
+       android:layout_marginTop="20dp"
+       android:layout_marginLeft="30dp"
+       android:layout_width="100dp"
+       android:layout_height="150dp"
+
+       android:background="@drawable/squared_paper1"
+       />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Squared Paper(Wide)"
+       android:paddingLeft="20dp"
+       android:textSize="12dp"
+       android:layout_marginBottom="5dp"
+       android:textColor="#ffffff"
+       />
+  </LinearLayout>
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      >
+   <Button
+       android:id="@+id/btn_sq2"
+       android:layout_marginTop="20dp"
+       android:layout_marginLeft="30dp"
+       android:layout_width="100dp"
+       android:layout_height="150dp"
+       android:background="@drawable/squared_paper2"
+       />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Squared Paper(Margin)"
+       android:paddingLeft="20dp"
+       android:textSize="12dp"
+       android:layout_marginBottom="5dp"
+       android:textColor="#ffffff"
+       />
+  </LinearLayout>
+
+
+ </LinearLayout>
+ </HorizontalScrollView>
+</RelativeLayout>

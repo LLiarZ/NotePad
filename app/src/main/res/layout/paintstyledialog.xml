@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RL_paintstyle"
+
+        android:background="#303030">
+
+        <RadioGroup
+            android:id="@+id/rg2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_paint1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="画笔"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/rb_paint2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="荧光笔"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/rb_rubber"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:gravity="center"
+                android:text="橡皮擦"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+        </RadioGroup>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager2"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_below="@+id/rg2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"></androidx.viewpager.widget.ViewPager>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:layout_below="@+id/rg2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"></View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/viewpager2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Size"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+            <SeekBar
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:progressDrawable="@drawable/seekbar_bg"
+                android:maxHeight="3dp"
+                android:minHeight="3dp"
+                android:layout_gravity="center"
+                android:id="@+id/sb_size2"
+                />
+
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@mipmap/clear"
+                android:layout_marginRight="5dp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
